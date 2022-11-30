@@ -43,3 +43,20 @@ footer {
     color:#FFF;
     padding:10px;
 }
+.grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:2rem;
+}
+.grid div {
+    width:100%;
+    aspect-ratio: 1;/*VIERKANT BLOK*/
+    background-color:#FF00FF;
+}
+
+
+@media (min-width: 1000px) {
+    .grid {
+        grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+  }
